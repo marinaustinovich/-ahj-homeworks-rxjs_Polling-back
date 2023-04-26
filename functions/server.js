@@ -43,4 +43,4 @@ router.get('/messages/unread', async (ctx) => {
 app.use(router.routes()).use(router.allowedMethods());
 
 const handler = serverless(app);
-exports.handler = handler;
+module.exports.handler = handler;
