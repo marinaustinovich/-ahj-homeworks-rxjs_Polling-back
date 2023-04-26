@@ -2,6 +2,6 @@
    functions = "functions" # Путь к папке с функциями Netlify
 
  [[redirects]]
-   from = "/*"
-   to = "/.netlify/functions/server"
+   from = "/.netlify/functions/server/*"
+   to = "/.netlify/functions/server/:splat"
    status = 200
